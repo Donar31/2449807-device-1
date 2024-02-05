@@ -2083,6 +2083,7 @@
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.36px;
+  display: block;
 }
 
 .item-input {
@@ -2091,7 +2092,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  color: rgba(0, 0, 0, 0.315);
+  color: #000000;
   border: none;
   background-color: #f0f0f0;
   box-sizing: border-box;
@@ -2099,21 +2100,47 @@
   margin: 0;
 }
 
+.item-input:hover {
+  outline: none;
+  background-color: #dcdcdc;
+  color: rgba(0, 0, 0, 0.315);
+}
+
+.item-input:focus {
+  outline: 2px solid #af4fff;
+  background-color: #f0f0f0;
+}
+
+.item-input:disabled {
+  outline: none;
+  opacity: 0.3;
+}
+
+.email-modal-input:invalid {
+  border: 2px solid #ff3d3d;
+}
+
 .email-modal-input {
   width: 360px;
   padding: 18px 18px;
-  border: 2px solid #ff3d3d;
+  border: 2px solid transparent;
+  /* border: 2px solid #ff3d3d; */
   margin-bottom: 2px;
 }
 
-.email-message {
+.email-modal-input:invalid + .email-message {
   color: #ff3d3d;
+  display: block;
+}
+
+.email-message {
+  color: #000000;
   font-family: "Rubik", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  display: block;
+  display: none;
 }
 
 .second-form-list {
@@ -2135,7 +2162,7 @@
 
 .second-item-text {
   margin-bottom: 14px;
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
 .wishes-modal-input {
@@ -2143,7 +2170,7 @@
 }
 
 .label-info {
-  margin-bottom: 10px;
+  position: relative;
 }
 
 .info {
@@ -2154,6 +2181,9 @@
   background-color: #ffe17f;
   border: none;
   margin-top: -4px;
+  position: absolute;
+  top: 1px;
+  right: 34px;
 }
 
 .left-item-button {
@@ -2167,6 +2197,23 @@
   background-image: url("../images/icons/minus.svg");
   background-position: center;
   outline: none;
+}
+
+.modal-button:hover {
+  outline: none;
+  background-color: #ebebeb;
+}
+
+.modal-button:focus {
+  outline: 2px solid #af4fff;
+}
+
+.modal-button:active {
+  opacity: 0.7;
+}
+
+.modal-button:disabled {
+  opacity: 0.3;
 }
 
 .quant-input {
@@ -2227,13 +2274,21 @@
   height: 8px;
   background-color: #ffe17f;
   z-index: -1;
+  /* transition: all 0.2s ease; */
 }
+
 .modal-link:hover.modal-link::before {
   outline: none;
   height: 40px;
 }
+
 .modal-link:focus.modal-link::before {
+  border: none;
   outline: 2px solid #af4fff;
   height: 40px;
   background-color: #ffc700;
+}
+.modal-link:active.modal-link::before{
+ background-color: #ffcc33;
+ outline: none;
 }

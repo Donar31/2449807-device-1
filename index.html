@@ -352,7 +352,8 @@
             <li class="first-list-item">
               <label for="email" class="item-text">Ваш e-mail:</label>
               <div class="email-item">
-                <input type="email" class="item-input email-modal-input" name="user-email" placeholder="почта" required>
+                <input type="email" class="item-input email-modal-input" name="user-email" value="почта"
+                  placeholder="напишите ваш e-mail" required>
                 <div class="email-message">Забавный у вас адрес</div>
               </div>
             </li>
@@ -368,19 +369,18 @@
                 <button class="info" type="button">i</button>
               </div>
               <div class="quant-input">
-                <button class="left-item-button" type="button">
+                <button for="id-value-input" class="left-item-button modal-button" type="button">
                   <span class="visually-hidden">Уменьшить</span>
                 </button>
-                <input type="number" value="1" class="item-input value-input" id="quant">
-                <button class="right-item-button" type="button">
+                <input id="id-value-input" type="number" value="1" class="item-input value-input" id="quant">
+                <button for="id-value-input" class="right-item-button modal-button" type="button">
                   <span class="visually-hidden">Увеличить</span>
                 </button>
               </div>
             </li>
           </ul>
-          <a href="#" class="modal-link">отправить</a>
+          <a href="https://echo.htmlacademy.ru/" class="modal-link">отправить</a>
           </fieldset>
-
         </form>
       </div>
     </div>
