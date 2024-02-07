@@ -17,6 +17,7 @@
         </a>
         <form action="https://echo.htmlacademy.ru/" class="header-form" method="get">
           <input type="search" id="head-input" class="header-input" placeholder="Поиск по сайту" required>
+          <label class="header-input-label" for="head-input"></label>
           <button class="header-button" for="head-input" type="submit">Найти</button>
         </form>
         <ul class="header-list-first">
@@ -61,30 +62,32 @@
         <div class="header-list-three">
           <a href="#" class="drop-header-link">каталог товаров</a>
           <div class="drop-list">
-            <ul class="first-drop-list">
-              <li class="drop-item">
-                <a href="#" class="drop-link">Виртуальная реальность</a>
-              </li>
-              <li class="drop-item">
-                <a href="#" class="drop-link">Моноподы для cелфи</a>
-              </li>
-              <li class="drop-item">
-                <a href="#" class="drop-link">Экшн-камеры</a>
-              </li>
-            </ul>
-            <ul class="second-drop-list">
-              <li class="drop-item">
-                <a href="#" class="drop-link">Фитнес-браслеты</a>
-              </li>
-              <li class="drop-item">
-                <a href="#" class="drop-link">Умные часы</a>
-              </li>
-            </ul>
-            <ul class="three-drop-list">
-              <li class="drop-item">
-                <a href="#" class="drop-link">Квадрокоптеры</a>
-              </li>
-            </ul>
+            <div class="header-drop-list">
+              <ul class="first-drop-list">
+                <li class="drop-item">
+                  <a href="#" class="drop-link">Виртуальная реальность</a>
+                </li>
+                <li class="drop-item">
+                  <a href="#" class="drop-link">Моноподы для cелфи</a>
+                </li>
+                <li class="drop-item">
+                  <a href="#" class="drop-link">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="second-drop-list">
+                <li class="drop-item">
+                  <a href="#" class="drop-link">Фитнес-браслеты</a>
+                </li>
+                <li class="drop-item">
+                  <a href="#" class="drop-link">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="three-drop-list">
+                <li class="drop-item">
+                  <a href="#" class="drop-link">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <ul class="header-list-four">
@@ -133,7 +136,6 @@
                       <p class="item-text">Радиус поражения</p>
                     </li>
                   </ul>
-                  <input type="radio" name="bullet-1" id="slide-first" class="slider-bullet" checked />
                 </div>
               </li>
               <li class="slider-screen">
@@ -155,7 +157,6 @@
                     </li>
                   </ul>
                 </div>
-                <input type="radio" name="bullet-2" id="slide-second" class="slider-bullet" />
               </li>
               <li class="slider-screen">
                 <span class="slide-number">03</span>
@@ -184,9 +185,13 @@
                     </li>
                   </ul>
                 </div>
-                <input type="radio" name="bullet-3" id="slide-three" class="slider-bullet" />
               </li>
             </ul>
+          </div>
+          <div class="slider-bullet-block">
+            <input type="radio" class="slider-bullet" checked>
+            <input type="radio" class="slider-bullet">
+            <input type="radio" class="slider-bullet">
           </div>
         </section>
         <section class="category">
@@ -215,13 +220,13 @@
           <div class="advantages-container">
             <ul class="advantages-legend">
               <li class="advantages-legend-item">
-                <a href="#" class="legend-item-link active substrate">Доставка</a>
+                <a href="#" class="legend-item-link active">Доставка</a>
               </li>
               <li class="advantages-legend-item">
-                <a href="#" class="legend-item-link substrate">Гарантия</a>
+                <a href="#" class="legend-item-link">Гарантия</a>
               </li>
               <li class="advantages-legend-item">
-                <a href="#" class="legend-item-link substrate">Кредит</a>
+                <a href="#" class="legend-item-link">Кредит</a>
               </li>
             </ul>
             <div class="advantages-slider">
@@ -247,8 +252,9 @@
             </div>
           </div>
         </section>
-        <a href="#" class="main-title-link">доставим редкий товар под заказ</a>
+
         <section class="addit-list">
+          <a href="#" class="main-title-link">доставим редкий товар под заказ</a>
           <section class="addit-item">
             <h3 class="addit-title">О нас</h3>
             <p class="addit-text">Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из нас.
@@ -337,7 +343,7 @@
         </div>
       </footer>
     </div>
-    <div class="modal modal-close1d">
+    <div class="modal modal-closed">
       <div class="modal-container">
         <button type="button" class="modal-close-button">
           <span class="visually-hidden">Закрыть модальное окно</span>
@@ -366,7 +372,15 @@
             <li class="second-list-item">
               <div class="label-info">
                 <label for="quant" class="item-text second-item-text">Количество:</label>
-                <button class="info" type="button">i</button>
+                <button class="info" type="button">
+                  <span class="visually-hidden">Дополнительная информация</span>
+                  <span class="info-text">
+                    <span class="info-wrapper">
+                      Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                      к провозу багажа.
+                    </span>
+                  </span>
+                  i</button>
               </div>
               <div class="quant-input">
                 <button for="id-value-input" class="left-item-button modal-button" type="button">
@@ -384,6 +398,7 @@
         </form>
       </div>
     </div>
+    <script src="script/script.js"></script>
   </body>
 
 </html>
