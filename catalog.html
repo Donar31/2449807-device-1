@@ -130,12 +130,12 @@
                   <legend class="slider legend">Стоимость</legend>
                   <button class="cat-silder-button bef">
                     <span class="visually-hidden">от</span>
-                    <p class="button-text-bef">от 0</p>
+                    <input type="text" class="button-text before-text" placeholder="от 0">
                   </button>
                   <div class="scale-black"></div>
                   <button class="cat-silder-button aft">
                     <span class="visually-hidden">до</span>
-                    <p class="button-text-aft">до 5000</p>
+                    <input type="text" class="button-text after-text" placeholder="до 5000">
                   </button>
                   <div class="scale-transp"></div>
                 </fieldset>
@@ -190,12 +190,12 @@
                 </select>
                 <ul class="display-direction">
                   <li class="display-item">
-                    <button type="button" class="view-button-up">
+                    <button type="button" class="view-button up">
                       <span class="visually-hidden">вверх</span>
                     </button>
                   </li>
                   <li class="display-item">
-                    <button type="button" class="view-button-down">
+                    <button type="button" class="view-button down">
                       <span class="visually-hidden">вниз</span>
                     </button>
                   </li>
@@ -203,26 +203,38 @@
               </form>
               <ul class="card-list">
                 <li class="card-item">
-                  <img src="./images/amateur-selfie-stick.jpg" alt="Любительская селфи-палка" width="360" height="380">
-                  <h3 class="card-title">Любительская
-                    селфи-палка</h3>
-                  <p class="card-text ">500 ₽</p>
+                  <a href="" class="card-focus">
+                    <img class="card-image" src="./images/amateur-selfie-stick.jpg" alt="Любительская селфи-палка"
+                      width="360" height="380">
+                    <h3 class="card-title">Любительская
+                      селфи-палка</h3>
+                    <p class="card-text ">500 ₽</p>
+                  </a>
                 </li>
                 <li class="card-item">
-                  <img src="./images/pro-selfie-stick.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-                  <h3 class="card-title">Профессиональная селфи-палка </h3>
-                  <p class="card-text">1 500 ₽</p>
+                  <a href="" class="card-focus">
+                    <img class="card-image" src="./images/pro-selfie-stick.jpg" alt="Профессиональная селфи-палка"
+                      width="360" height="380">
+                    <h3 class="card-title">Профессиональная селфи-палка </h3>
+                    <p class="card-text">1 500 ₽</p>
+                  </a>
                 </li>
                 <li class="card-item">
-                  <img src="./images/unsick-selfie-stick.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-                  <h3 class="card-title">Непотопляемая
-                    селфи-палка</h3>
-                  <p class="card-text">2 500 ₽</p>
+                  <a href="" class="card-focus">
+                    <img class="card-image" src="./images/unsick-selfie-stick.jpg" alt="Непотопляемая селфи-палка"
+                      width="360" height="380">
+                    <h3 class="card-title">Непотопляемая
+                      селфи-палка</h3>
+                    <p class="card-text">2 500 ₽</p>
+                  </a>
                 </li>
                 <li class="card-item">
-                  <img src="./images/follow-me-stick.jpg" alt="«Следуй за мной» селфи-палка" width="360" height="380">
-                  <h3 class="card-title ">Селфи-палка «Следуй  за мной»</h3>
-                  <p class="card-text">1 500 ₽</p>
+                  <a href="" class="card-focus">
+                    <img class="card-image" src="./images/follow-me-stick.jpg" alt="«Следуй за мной» селфи-палка"
+                      width="360" height="380">
+                    <h3 class="card-title ">Селфи-палка «Следуй за мной»</h3>
+                    <p class="card-text">1 500 ₽</p>
+                  </a>
                 </li>
               </ul>
               <a href="#" class="load-link">загрузить ещё</a>
@@ -258,8 +270,8 @@
                 <img src="./images/icons/foot-logo.svg" width="145" height="36" alt="Логотип сайта"
                   class="foot-logo-svg">
               </a>
-              <p class="address">Санкт-Петербург, набережная
-                реки Карповки, 5, литера П.</p>
+              <address class="address">Санкт-Петербург, набережная
+                реки Карповки, 5, литера П.</address>
             </div>
             <div class="t-foot-block">
               <ul class="footer-list">
@@ -275,50 +287,18 @@
               </ul>
               <ul class="socials">
                 <li class="social-item">
-                  <a href="https://t.me/htmlacademy" class="social-link">
+                  <a href="https://t.me/htmlacademy" class="social-link telegram">
                     <span class="visually-hidden">Telegram</span>
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3" />
-                      <g clip-path="url(#clip0_11454_2988)">
-                        <path
-                          d="M25.4431 14.0736L13.6231 18.6316C12.8164 18.9556 12.8211 19.4056 13.4751 19.6062L16.5097 20.5529L23.5311 16.1229C23.8631 15.9209 24.1664 16.0296 23.9171 16.2509L18.2284 21.3849H18.2271L18.2284 21.3856L18.0191 24.5136C18.3257 24.5136 18.4611 24.3729 18.6331 24.2069L20.1071 22.7736L23.1731 25.0382C23.7384 25.3496 24.1444 25.1896 24.2851 24.5149L26.2977 15.0296C26.5037 14.2036 25.9824 13.8296 25.4431 14.0736Z"
-                          fill="#444444" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_11454_2988">
-                          <rect width="14" height="12" fill="white" transform="translate(13 14)" />
-                        </clipPath>
-                      </defs>
-                    </svg>
                   </a>
                 </li>
                 <li class="social-item">
-                  <a href="https://www.youtube.com/user/htmlacademyru" class="social-link">
+                  <a href="https://www.youtube.com/user/htmlacademyru" class="social-link youtube">
                     <span class="visually-hidden">Youtube</span>
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3" />
-                      <g clip-path="url(#clip0_11454_2993)">
-                        <path
-                          d="M27.6671 16.6746C27.5765 16.3515 27.4 16.0589 27.1564 15.828C26.9059 15.59 26.5989 15.4197 26.2644 15.3333C25.0124 15.0033 19.9964 15.0033 19.9964 15.0033C17.9053 14.9795 15.8147 15.0842 13.7364 15.3166C13.4019 15.4094 13.0955 15.5835 12.8444 15.8233C12.5977 16.0606 12.4191 16.3533 12.3257 16.674C12.1015 17.8818 11.9926 19.1082 12.0004 20.3366C11.9924 21.564 12.1011 22.79 12.3257 23.9993C12.4171 24.3186 12.5951 24.61 12.8424 24.8453C13.0897 25.0806 13.3977 25.2506 13.7364 25.3406C15.0051 25.67 19.9964 25.67 19.9964 25.67C22.0902 25.6938 24.1835 25.5892 26.2644 25.3566C26.5989 25.2702 26.9059 25.1 27.1564 24.862C27.3999 24.6311 27.5762 24.3385 27.6664 24.0153C27.8965 22.8079 28.0083 21.581 28.0004 20.352C28.0177 19.1177 27.906 17.885 27.6671 16.674V16.6746ZM18.4017 22.6193V18.0546L22.5751 20.3373L18.4017 22.6193Z"
-                          fill="#444444" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_11454_2993">
-                          <rect width="16" height="11" fill="white" transform="translate(12 15)" />
-                        </clipPath>
-                      </defs>
-                    </svg>
                   </a>
                 </li>
                 <li class="social-item">
-                  <a href="https://twitter.com/htmlacademy_ru" class="social-link">
+                  <a href="https://twitter.com/htmlacademy_ru" class="social-link twitter">
                     <span class="visually-hidden">Twitter</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                      <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3" />
-                      <path
-                        d="M22.7 13.1551C24.2 12.6551 25.3 13.4551 25.9 14.2551C26.4 14.0551 27 13.8551 27.6 13.6551C27.6 14.4551 27.1 15.0551 26.8 15.2551C27.5 15.4551 28 14.8551 28 14.8551C27.9 15.7551 27.1 16.5551 26.6 16.7551C26.4 23.0551 23.8 27.1551 17.7 27.0551C17.2 27.0551 17.8 27.0551 17.3 27.0551C17 27.0551 13.6 26.6551 13 25.2551C15 25.4551 16.4 24.8551 17.1 24.1551C16.3 23.8551 14.7 23.7551 14.5 21.3551C14.8 21.5551 15 21.6551 15.6 21.5551C14.5 20.7551 13.3 20.0551 13.4 18.0551C13.7 18.3551 14.3 18.5551 14.6 18.4551C14 18.2551 12.8 15.3551 13.8 13.8551C15.4 15.5551 17.1 17.2551 20.1 17.3551C20.3 15.2551 21.1 13.8551 22.7 13.1551Z"
-                        fill="#444444" />
-                    </svg>
                   </a>
                 </li>
               </ul>
