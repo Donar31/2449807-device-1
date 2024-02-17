@@ -12,7 +12,7 @@
     <div class="container">
       <h1 class="visually-hidden">Главная страница</h1>
       <div class="first main-block">
-        <header class="main-header">
+        <header class="main-header-catalog">
           <a href="index.html" class="logo-link">
             <img src="./images/icons/device-logo.svg" alt="Логотип сайта" class="logo" width="147" height="37">
           </a>
@@ -128,38 +128,48 @@
                 <h2 class="filter-title">фильтр:</h2>
                 <fieldset class="catalog-slider">
                   <legend class="slider legend">Стоимость</legend>
-                  <button class="cat-silder-button bef">
-                    <span class="visually-hidden">от</span>
-                    <input type="text" class="button-text before-text" placeholder="от 0">
-                  </button>
+                  <div class="cat-slider-container">
+                    <button type="button" class="cat-silder-button bef">
+                      <span class="visually-hidden">от</span>
+                    </button>
+                    <div class="cat-input before-input">
+                      <label class="cat-input-label" for="cat-input-bef">от</label>
+                      <input id="cat-input-bef" type="text" class="button-text before-text" value="0">
+                    </div>
+                  </div>
+                  <div class="cat-slider-container">
+                    <button type="button" class="cat-silder-button aft">
+                      <span class="visually-hidden">до</span>
+                    </button>
+                    <div class="cat-input after-input">
+                      <label class="cat-input-label" for="cat-input-aft">до</label>
+                      <input id="cat-input-aft" type="text" class="button-text after-text" value="5000">
+                    </div>
+                  </div>
                   <div class="scale-black"></div>
-                  <button class="cat-silder-button aft">
-                    <span class="visually-hidden">до</span>
-                    <input type="text" class="button-text after-text" placeholder="до 5000">
-                  </button>
                   <div class="scale-transp"></div>
                 </fieldset>
                 <fieldset class="color-fiedset">
                   <legend class="color legend">Цвет</legend>
                   <ul class="color-list">
                     <li class="color-item">
-                      <input type="checkbox" class="visually-hidden checkbox" id="black" name="black" checked>
+                      <input type="checkbox" class="visually-hidden checkbox" id="black" name="color-black" checked>
                       <label class="checkbox-label" for="black">Черный</label>
                     </li>
                     <li class="color-item">
-                      <input type="checkbox" checked class="visually-hidden checkbox" id="white" name="white" checked>
+                      <input type="checkbox" checked class="visually-hidden checkbox" id="white" name="color-white" checked>
                       <label class="checkbox-label" for="white">Белый</label>
                     </li>
                     <li class="color-item">
-                      <input type="checkbox" class="visually-hidden checkbox" id="blue" name="blue">
+                      <input type="checkbox" class="visually-hidden checkbox" id="blue" name="color-blue">
                       <label class="checkbox-label" for="blue">Синий</label>
                     </li>
                     <li class="color-item">
-                      <input type="checkbox" class="visually-hidden checkbox" id="red" name="red">
+                      <input type="checkbox" class="visually-hidden checkbox" id="red" name="color-red">
                       <label class="checkbox-label" for="red">Красный</label>
                     </li>
                     <li class="color-item">
-                      <input type="checkbox" class="visually-hidden checkbox" id="pink" name="pink">
+                      <input type="checkbox" class="visually-hidden checkbox" id="pink" name="color-pink">
                       <label class="checkbox-label" for="pink">Розовый</label>
                     </li>
                   </ul>
@@ -168,11 +178,11 @@
                   <legend class="bluetooth legend">Bluetooth</legend>
                   <ul class="bluetooth-list">
                     <li class="bluetooth-item">
-                      <input type="radio" class="visually-hidden radio" id="yes" value="yes" name="type" checked>
+                      <input type="radio" class="visually-hidden radio" id="yes" value="yes" name="bluetooth" checked>
                       <label for="yes" class="radio-label">Есть</label>
                     </li>
                     <li class="bluetooth-item">
-                      <input type="radio" class="visually-hidden radio" id="no" value="no" name="type">
+                      <input type="radio" class="visually-hidden radio" id="no" value="no" name="bluetooth">
                       <label for="no" class="radio-label">Нет</label>
                     </li>
                   </ul>
@@ -203,7 +213,7 @@
               </form>
               <ul class="card-list">
                 <li class="card-item">
-                  <a href="" class="card-focus">
+                  <a href="#" class="card-link">
                     <img class="card-image" src="./images/amateur-selfie-stick.jpg" alt="Любительская селфи-палка"
                       width="360" height="380">
                     <h3 class="card-title">Любительская
@@ -212,7 +222,7 @@
                   </a>
                 </li>
                 <li class="card-item">
-                  <a href="" class="card-focus">
+                  <a href="#" class="card-link">
                     <img class="card-image" src="./images/pro-selfie-stick.jpg" alt="Профессиональная селфи-палка"
                       width="360" height="380">
                     <h3 class="card-title">Профессиональная селфи-палка </h3>
@@ -220,7 +230,7 @@
                   </a>
                 </li>
                 <li class="card-item">
-                  <a href="" class="card-focus">
+                  <a href="#" class="card-link">
                     <img class="card-image" src="./images/unsick-selfie-stick.jpg" alt="Непотопляемая селфи-палка"
                       width="360" height="380">
                     <h3 class="card-title">Непотопляемая
@@ -229,7 +239,7 @@
                   </a>
                 </li>
                 <li class="card-item">
-                  <a href="" class="card-focus">
+                  <a href="#" class="card-link">
                     <img class="card-image" src="./images/follow-me-stick.jpg" alt="«Следуй за мной» селфи-палка"
                       width="360" height="380">
                     <h3 class="card-title ">Селфи-палка «Следуй за мной»</h3>
