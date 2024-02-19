@@ -18,7 +18,7 @@
         <form action="https://echo.htmlacademy.ru/" class="header-form" method="get">
           <input type="search" id="head-input" class="header-input" placeholder="Поиск по сайту" required>
           <label class="header-input-label" for="head-input"></label>
-          <button class="header-button" for="head-input" type="submit">Найти</button>
+          <button class="header-button" type="submit">Найти</button>
         </form>
         <ul class="header-list-first">
           <li class="first-header-item">
@@ -189,7 +189,7 @@
             </ul>
           </div>
           <div class="slider-bullet-block">
-            <button class="slider-bullet" type="button">
+            <button class="slider-bullet slider-bullet-active" type="button">
               <span class="visually-hidden">первый слайд</span>
             </button>
             <button class="slider-bullet" type="button">
@@ -201,6 +201,7 @@
           </div>
         </section>
         <section class="category">
+          <h2 class="visually-hidden">Секция: категории товаров.</h2>
           <ul class="category-list">
             <li class="category-item">
               <a href="#" class="category-item-link link-glasses">Виртуальная реальность</a>
@@ -261,6 +262,7 @@
         </section>
 
         <section class="addit-list">
+          <h2 class="visually-hidden">Секция: Доставка.</h2>
           <a href="#" class="main-title-link">доставим редкий товар под заказ</a>
           <section class="addit-item">
             <h3 class="addit-title">О нас</h3>
@@ -360,13 +362,13 @@
           <ul class="first-form-list">
             <li class="first-list-item">
               <label for="name" class="item-text">Ваше имя:</label>
-              <input type="text" class="item-input" id="name" placeholder="Введите имя">
+              <input type="text" class="item-input" id="name" placeholder="Введите имя" name="name">
             </li>
             <li class="first-list-item">
-              <label for="email" class="item-text">Ваш e-mail:</label>
+              <label for="email-input" class="item-text">Ваш e-mail:</label>
               <div class="email-item">
-                <input type="email" class="item-input email-modal-input" name="user-email" value="почта"
-                  placeholder="напишите ваш e-mail" required>
+                <input id="email-input" type="email" class="item-input email-modal-input" name="user-email"
+                  value="почта" placeholder="напишите ваш e-mail" required>
                 <div class="email-message">Забавный у вас адрес</div>
               </div>
             </li>
@@ -374,7 +376,7 @@
           <ul class="second-form-list">
             <li class="second-list-item">
               <label for="wishes" class="item-text second-item-text">Что нужно привезти:</label>
-              <input type="text" class="item-input wishes-modal-input" id="wishes" placeholder="В свободной форме">
+              <input type="text" class="item-input wishes-modal-input" id="wishes" placeholder="В свободной форме" name="wish">
             </li>
             <li class="second-list-item">
               <div class="label-info">
@@ -390,18 +392,17 @@
                   i</button>
               </div>
               <div class="quant-input">
-                <button for="id-value-input" class="left-item-button modal-button" type="button">
+                <button class="left-item-button modal-button" type="button">
                   <span class="visually-hidden">Уменьшить</span>
                 </button>
-                <input id="id-value-input" type="number" value="1" class="item-input value-input" id="quant">
-                <button for="id-value-input" class="right-item-button modal-button" type="button">
+                <input type="number" value="1" class="item-input value-input" id="quant" name="quantity">
+                <button class="right-item-button modal-button" type="button">
                   <span class="visually-hidden">Увеличить</span>
                 </button>
               </div>
             </li>
           </ul>
           <a href="https://echo.htmlacademy.ru/" class="modal-link">отправить</a>
-          </fieldset>
         </form>
       </div>
     </div>
