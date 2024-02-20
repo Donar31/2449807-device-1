@@ -3044,6 +3044,7 @@
   color: #000000;
   padding: 17px 9px 17px 24px;
   text-align: center;
+  -webkit-appearance: none;
 }
 
 .right-item-button {
