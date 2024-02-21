@@ -17,7 +17,9 @@
         </a>
         <form action="https://echo.htmlacademy.ru/" class="header-form" method="get">
           <input type="search" id="head-input" class="header-input" placeholder="Поиск по сайту" required>
-          <label class="header-input-label" for="head-input"></label>
+          <label class="header-input-label" for="head-input">
+            <span class="visually-hidden">рамка для поля поиска</span>
+          </label>
           <button class="header-button" type="submit">Найти</button>
         </form>
         <ul class="header-list-first">
@@ -129,11 +131,11 @@
                   <ul class="slider-description">
                     <li class="slider-item-description">
                       <p class="item-digit">800 м</p>
-                      <p class="item-text">Дальность полета</p>
+                      <p class="item-text-slider">Дальность полета</p>
                     </li>
                     <li class="slider-item-description">
                       <p class="item-digit">50 м</p>
-                      <p class="item-text">Радиус поражения</p>
+                      <p class="item-text-slider">Радиус поражения</p>
                     </li>
                   </ul>
                 </div>
@@ -153,7 +155,7 @@
                   <ul class="slider-description">
                     <li class="slider-item-description">
                       <p class="item-digit">48 часов</p>
-                      <p class="item-text">Без подзарядки</p>
+                      <p class="item-text-slider">Без подзарядки</p>
                     </li>
                   </ul>
                 </div>
@@ -173,15 +175,15 @@
                   <ul class="slider-description">
                     <li class="slider-item-description">
                       <p class="item-digit">8,5 м</p>
-                      <p class="item-text">Длина палки</p>
+                      <p class="item-text-slider">Длина палки</p>
                     </li>
                     <li class="slider-item-description">
                       <p class="item-digit">5 кг</p>
-                      <p class="item-text">Вес палки</p>
+                      <p class="item-text-slider">Вес палки</p>
                     </li>
                     <li class="slider-item-description">
                       <p class="item-digit">Карбон</p>
-                      <p class="item-text">Материал</p>
+                      <p class="item-text-slider">Материал</p>
                     </li>
                   </ul>
                 </div>
@@ -347,6 +349,7 @@
           <div class="th-foot-block">
             <a class="footer-tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
             <a href="https://htmlacademy.ru" class="footer-logo">
+              <span class="visually-hidden">Логотип Академии</span>
             </a>
           </div>
         </div>
@@ -369,14 +372,15 @@
               <div class="email-item">
                 <input id="email-input" type="email" class="item-input email-modal-input" name="user-email"
                   value="почта" placeholder="напишите ваш e-mail" required>
-                <div class="email-message">Забавный у вас адрес</div>
+                <span class="email-message">Забавный у вас адрес</span>
               </div>
             </li>
           </ul>
           <ul class="second-form-list">
             <li class="second-list-item">
               <label for="wishes" class="item-text second-item-text">Что нужно привезти:</label>
-              <input type="text" class="item-input wishes-modal-input" id="wishes" placeholder="В свободной форме" name="wish">
+              <input type="text" class="item-input wishes-modal-input" id="wishes" placeholder="В свободной форме"
+                name="wish">
             </li>
             <li class="second-list-item">
               <div class="label-info">
@@ -402,7 +406,7 @@
               </div>
             </li>
           </ul>
-          <a href="https://echo.htmlacademy.ru/" class="modal-link">отправить</a>
+          <button type="submit" class="modal-link">отправить</button>
         </form>
       </div>
     </div>
